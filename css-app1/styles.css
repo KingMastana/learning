@@ -118,6 +118,25 @@ button {
 /* ================================ */
 /* 5. Flex - Programs Section */
 /* ================================ */
+.programs {
+    padding: 100px;
+    background-color: #eee;
+    padding-bottom: 200px;
+}
+
+.programs__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.programs__card {
+    background-color: #b5b5b5;
+    padding: 30px;
+    width: 30%;
+    height: 400px;
+}
 
 /* ================================ */
 /* 6. HTML Elements & Images - Form Section */
