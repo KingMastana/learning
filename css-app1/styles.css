@@ -16,7 +16,7 @@ body {
 }
 
 .hero__title {
-    color: black;
+    color: #f5f5f5;
 }
 
 .hero__description {
@@ -245,6 +245,127 @@ button {
 /* ================================ */
 /* 8. Images and Final Styling */
 /* ================================ */
+.hero {
+    height: 50vh;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: overlay;
+    text-align: center;
+    align-content: center;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature__container {
+    flex-basis: 50%;
+}
+
+.feature__image-container {
+    flex-basis: 50%;
+}
+
+.feature__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cta__button--primary:hover {
+    background-color: #d0d0d0;
+    cursor: pointer;
+}
+
+.video__button--primary {
+    color: #5bb471;
+
+}
+
+.video__button--primary:hover {
+    background-color: #5bb471;
+    color: white;
+    cursor: pointer;
+}
+
+.video__button--secondary {
+    color: #5bb471;
+
+}
+
+.video__button--secondary:hover {
+    background-color: #5bb471;
+    color: white;
+    cursor: pointer;
+}
+
+.video__container {
+    background-image: url("images/video.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.0 5);
+    background-blend-mode: overlay;
+}
+
+.programs__card {
+    background: none;
+    padding: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.programs__card-image {
+    width: 100%;
+    height: 700px;
+    min-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.programs__card-description {
+    color: #6e6e6e;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.programs__button {
+    background-color: #34c759;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.programs__button:hover {
+    background-color: #2db14e;
+}
+
+.element__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
 
 /* ================================ */
 /* 9. Navbar and Footer Section */
