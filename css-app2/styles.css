@@ -412,3 +412,13 @@ section h2 {
 }
 
 /* 7. Images and Styling */
+footer {
+  background: black;
+  color: white;
+}
+
+footer p {
+  max-width: 1500px;
+  padding: 2rem 4rem;
+  text-align: center;
+}
