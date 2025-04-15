@@ -70,7 +70,7 @@ export default function App() {
           </div>
         </div>
       </nav>
-      <main className="container mx-auto p-4">
+      <main className="container mx-auto p-4 bg-white/70">
         <Outlet />
       </main>
     </>
