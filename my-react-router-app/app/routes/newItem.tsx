@@ -1,6 +1,16 @@
 import { Form, redirect, type ActionFunctionArgs } from "react-router";
 import { supabase } from "~/supabase-client";
 
+export function meta() {
+  return [
+    { title: "New Item | RRV7" },
+    {
+      name: "description",
+      content: "Create a new item using our Supabase CRUD app",
+    },
+  ];
+}
+
 export async function action({ request }: ActionFunctionArgs) {
   const formData = await request.formData();
   const title = formData.get("title") as string;
