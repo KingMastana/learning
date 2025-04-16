@@ -2,6 +2,16 @@ import { supabase } from "~/supabase-client";
 import type { Route } from "./+types/items";
 import { Link } from "react-router";
 
+export function meta() {
+  return [
+    { title: "All Your Items | RRV7" },
+    {
+      name: "description",
+      content: "Show all items using our Supabase CRUD app",
+    },
+  ];
+}
+
 export async function loader() {
   const { data, error } = await supabase.from("items").select("*");
   if (error) {
@@ -26,8 +36,8 @@ export default function items({ loaderData }: Route.ComponentProps) {
 
       <ul className="space-y-4">
         {items?.map((item) => (
-          <li className="p-4 bg-white rounded shadow">
-            <Link to={"/"} className="block text-indigo-600">
+          <li key={item.title} className="p-4 bg-white rounded shadow">
+            <Link to={`/items/${item.id}`} className="block text-indigo-600">
               <span className="font-semibold text-xl">{item.title}</span>
               <p className="text-gray-700">{item.description}</p>
             </Link>

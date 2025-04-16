@@ -32,18 +32,21 @@ export default function NewItem() {
   return (
     <div>
       <h2>Create New Item</h2>
-      <Form method="post">
+      <Form method="post" className="space-y-4 bg-white p-4 rounded shadow">
         <div>
-          <label> Title </label>
-          <input type="text" name="title" required />
+          <label className="block text-gray-700"> Title </label>
+          <input type="text" name="title" className="input" required />
         </div>
 
         <div>
-          <label> Description </label>
-          <textarea name="description" required />
+          <label className="block text-gray-700"> Content </label>
+          <textarea name="description" className="input" required />
         </div>
 
-        <button type="submit" className="cursor-pointer">
+        <button
+          type="submit"
+          className="cursor-pointer bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500"
+        >
           {" "}
           Create Item{" "}
         </button>
